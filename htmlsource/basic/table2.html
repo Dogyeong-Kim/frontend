@@ -4,37 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      table {
+        width: 800px;
+        height: 1000px;
+        border-collapse: collapse;
+      }
+      tr,
+      td {
+        border: 1px solid black;
+      }
+      .name {
+        height: 100px;
+      }
+      .fc {
+        width: 200px;
+      }
+      .names {
+        width: 100px;
+      }
+    </style>
   </head>
   <body>
-    <table border="1" width="600">
+    <table>
       <tr>
-        <td rowspan="3">
+        <td id="fc" rowspan="3">
           <img src="" alt="" />
         </td>
-        <td colspan="4"><h2>이력서</h2></td>
+        <td id="name" colspan="4"><h2>이력서</h2></td>
       </tr>
       <tr>
         <td rowspan="2">성명</td>
-        <td colspan="2" rowspan="2"></td>
+        <td id="names" colspan="2" rowspan="2"></td>
         <td>생년월일</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
       </tr>
       <tr>
-        <td>이메일</td>
+        <td id="fc">이메일</td>
         <td colspan="4">&nbsp;</td>
       </tr>
       <tr>
-        <td>현주소</td>
+        <td id="fc">현주소</td>
         <td colspan="4">&nbsp;</td>
       </tr>
       <tr>
-        <td>연락처</td>
+        <td id="fc">연락처</td>
         <td colspan="4">&nbsp;</td>
       </tr>
       <tr>
-        <td>기간</td>
+        <td id="fc">기간</td>
         <td colspan="2">학력사항</td>
         <td colspan="2">비고</td>
       </tr>

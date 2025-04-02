@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 12px;
+      }
+      body {
+        font-size: 18px;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      .wrapper {
+        display: flex;
+      }
+      .wrapper .box {
+        background: orange;
+        margin: 0 10px;
+      }
+      .box_px {
+        width: 180px;
+        height: 180px;
+      }
+      .box_em {
+        width: 10em;
+        height: 10em;
+      }
+      .box_rem {
+        width: 10rem;
+        height: 10rem;
+      }
+
+      p {
+        background-color: cadetblue;
+        width: 100%; /* body의 공간 안에서 100% */
+        height: 50%; /* body의 공안 안에서 50% */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 16px(default 글자크기) + 2em = 32px -->
+    <h1>기본문법 - 단위</h1>
+    <h2>EM</h2>
+    <!-- 16px(default 글자크기) * 1.2em = 19.2px -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+      dolorem, voluptate tempora dolore placeat illo provident laborum facere id
+      magnam consequatur dolor officiis iste quidem quis animi expedita nam
+      deleniti officia ipsa. Magnam fugiat unde delectus cumque accusamus
+      corrupti. Cupiditate quia quam similique omnis alias cum ex hic quo
+      itaque.
+    </p>
+    <div class="wrapper clearfix">
+      <div class="box box_px">PX</div>
+      <div class="box box_em">EM</div>
+      <div class="box box_rem">REM</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 여백 0 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* body : 배경색 : #333338, 글자색 : #444 */
+      body {
+        background-color: #333338;
+        text-decoration: #444;
+      }
+      /* container : flex */
+      .container {
+        display: flex;
+      }
+      /* sidebar : 바깥여백 : 10, 안쪽여백 6, 베경색 #eee*/
+      .sidebar {
+        margin: 10px;
+        padding: 6px;
+        background-color: #eee;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      /* panel : 바깥여백 : 10, 안쪽여백 20, 베경색 #fff*/
+      .panel {
+        margin: 10px;
+        padding: 20px;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae
+            iure autem ut! Officiis soluta praesentium velit accusantium ex
+            excepturi placeat eligendi labore eaque exercitationem? Fugiat error
+            doloribus ullam porro.
+          </p>
+          <img src="../../image/bg.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fuga
+            repellendus fugiat earum explicabo, exercitationem optio, commodi
+            repudiandae placeat necessitatibus aliquid corrupti quibusdam nulla
+            temporibus veritatis ad hic architecto qui.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim,
+            voluptatum consequuntur aperiam molestiae laudantium nam corrupti
+            odio sapiente iste corporis, asperiores totam animi quidem ut neque
+            in. Reiciendis, amet dolorum.
+          </p>
+          <h3>Subtitle</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+            tempore qui recusandae. Ex id rem dolore aliquam quidem, sunt
+            praesentium non fugiat labore sint dolorem ipsum cupiditate.
+            Distinctio iste tempore minima praesentium eligendi reprehenderit
+            magnam et odit vitae rem, accusantium, sunt quod ut aperiam,
+            voluptas est tenetur quas culpa. Aliquid.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+            tempore qui recusandae. Ex id rem dolore aliquam quidem, sunt
+            praesentium non fugiat labore sint dolorem ipsum cupiditate.
+            Distinctio iste tempore minima praesentium eligendi reprehenderit
+            magnam et odit vitae rem, accusantium, sunt quod ut aperiam,
+            voluptas est tenetur quas culpa. Aliquid.
+          </p>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nobis
+            dolorum laudantium neque? Consequuntur enim nisi quis accusamus
+            rerum? Cumque dolore esse nisi ipsa reiciendis dolorem corporis,
+            placeat quaerat consequatur.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nobis
+            dolorum laudantium neque? Consequuntur enim nisi quis accusamus
+            rerum? Cumque dolore esse nisi ipsa reiciendis dolorem corporis,
+            placeat quaerat consequatur.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nobis
+            dolorum laudantium neque? Consequuntur enim nisi quis accusamus
+            rerum? Cumque dolore esse nisi ipsa reiciendis dolorem corporis,
+            placeat quaerat consequatur.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nobis
+            dolorum laudantium neque? Consequuntur enim nisi quis accusamus
+            rerum? Cumque dolore esse nisi ipsa reiciendis dolorem corporis,
+            placeat quaerat consequatur.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 여백 0 */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* body 배경색 : #ecf0f1 */
+      body {
+        background-color: #ecf0f1;
+      }
+
+      /* wrapper : max-width : 60rem, width : 100% */
+      .wrapper {
+        width: 100%;
+        max-width: 60rem;
+        margin: 2rem auto;
+      }
+
+      /* flexbg : flex 컨테이너 */
+      .flexbg {
+        display: flex;
+      }
+
+      /* main : 배경색 흰색, 안쪽여백 25, order 2*/
+      .flexbg main {
+        background-color: white;
+        padding: 25px;
+        order: 2;
+      }
+      /* left : 배경색 #3498db, order 1 */
+      .flexbg .sidebar {
+        padding: 25px;
+        width: 20%;
+      }
+      .flexbg .left {
+        background-color: #3498db;
+        order: 1;
+      }
+      /* right : 배경색 #344952, order 3 */
+      .flexbg .right {
+        background-color: #34495e;
+        order: 3;
+      }
+
+      /* 481 ~ 768 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          /* display: flex; */
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+      }
+
+      /* 0 ~ 480 */
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+          laudantium optio tempora autem sit ad quam temporibus mollitia enim
+          libero blanditiis illum, excepturi, rem unde iusto quibusdam numquam
+          ducimus esse recusandae repellendus sequi. Aliquam quaerat veniam
+          porro quam? Consequatur obcaecati rem iusto illum, accusamus fugiat
+          dolore quaerat ex sapiente maiores maxime voluptate hic sequi quisquam
+          temporibus? Cum ducimus adipisci commodi unde voluptates, ad aliquam
+          nisi non, quos praesentium tempore? Sit tenetur mollitia eaque
+          blanditiis quaerat reprehenderit placeat ullam officiis numquam
+          distinctio autem, odit corrupti vitae voluptas harum veritatis vel
+          aut, ad ut enim fuga ab explicabo adipisci. Magnam, ipsum sed.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+          laudantium optio tempora autem sit ad quam temporibus mollitia enim
+          libero blanditiis illum, excepturi, rem unde iusto quibusdam numquam
+          ducimus esse recusandae repellendus sequi. Aliquam quaerat veniam
+          porro quam? Consequatur obcaecati rem iusto illum, accusamus fugiat
+          dolore quaerat ex sapiente maiores maxime voluptate hic sequi quisquam
+          temporibus? Cum ducimus adipisci commodi unde voluptates, ad aliquam
+          nisi non, quos praesentium tempore? Sit tenetur mollitia eaque
+          blanditiis quaerat reprehenderit placeat ullam officiis numquam
+          distinctio autem, odit corrupti vitae voluptas harum veritatis vel
+          aut, ad ut enim fuga ab explicabo adipisci. Magnam, ipsum sed.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>You might have some latest posts here on the left</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>And some other widgets here on the right</p>
+      </aside>
+    </div>
+  </body>
+</html>

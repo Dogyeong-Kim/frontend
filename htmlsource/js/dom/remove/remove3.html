@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header1" class="header">Header 1</h1>
+    <h2 id="header2" class="header" name="header2">Header 1</h2>
+    <img src="../../../image/image1.jpg" alt="이미지" />
+    <a href="remove2.html">remove2</a>
+    <script>
+      // h1 요소 가져온 후 속성 값 출력
+      const h1 = document.querySelector("h1");
+      console.log(h1.id);
+      // console.log(h1.class);
+      // console.log(h1.classList);
+      // getAttribute(속성명);
+      console.log(h1.getAttribute("class"));
+      // class 속성 제거
+      h1.removeAttribute("class");
+
+      // img 요소 가져온 후 속성 값
+      const img = document.querySelector("img");
+      console.log(img.src); // 절대경로
+      console.log(img.getAttribute("src")); // 상대경로
+      console.log(img.alt);
+      // 값만 제거
+      // img.src ="";
+      img.setAttribute("src", "");
+
+      // a 요소
+      const a = document.querySelector("a");
+      console.log(a.href); // 절대경로
+      console.log(a.getAttribute("href")); // 상대경로
+
+      // h2 찾은 후 name 속성 제거
+      const h2 = document.querySelector("h2");
+      h2.removeAttribute("name");
+    </script>
+  </body>
+</html>

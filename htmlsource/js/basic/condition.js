@@ -9,7 +9,7 @@ const hour = date.getHours();
 if (hour < 12) {
   console.log("오전");
 } else {
-  conlsole.log("오후");
+  console.log("오후");
 }
 
 // NaN(Not a Number)

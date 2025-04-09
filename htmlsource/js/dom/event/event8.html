@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #p1 {
+        /* display: none; <==> block */
+        /* visibility: hidden; <==> visible */
+      }
+    </style>
+  </head>
+  <body>
+    <p id="p1">This is a paragraph</p>
+    <button type="button">요소 숨김</button>
+    <button type="button">요소 보이기</button>
+    <script>
+      const btn = document.querySelectorAll("button");
+      const p1 = document.querySelector("#p1");
+      // 요소 숨김 클릭 시 p1 숨기기
+      btn[0].addEventListener("click", () => {
+        p1.style.visibility = "hidden";
+      });
+      // 요소 보이기 클릭 시 p1 보이기
+      btn[1].addEventListener("click", () => {
+        p1.style.visibility = "visible";
+      });
+    </script>
+  </body>
+</html>
